@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "intro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/intro/intro.eot?#iefix") format("embedded-opentype"), url("../fonts/intro/intro.woff") format("woff"), url("../fonts/intro/intro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdana";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdana/verdana.eot?#iefix") format("embedded-opentype"), url("../fonts/verdana/verdana.woff") format("woff"), url("../fonts/verdana/verdana.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdanabold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdanabold/verdanabold.eot?#iefix") format("embedded-opentype"), url("../fonts/verdanabold/verdanabold.woff") format("woff"), url("../fonts/verdanabold/verdanabold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdanaitalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdanaitalic/verdanaitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/verdanaitalic/verdanaitalic.woff") format("woff"), url("../fonts/verdanaitalic/verdanaitalic.ttf") format("truetype"); }
