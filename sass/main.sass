@@ -474,3 +474,256 @@ h2
 	.button
 		font-size: 12px
 		padding: 14px 21px
+
+.s_step
+	height: 1285px
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 19px solid transparent
+		border-right: 19px solid transparent
+		border-top: 19px solid #fff
+		bottom: -19px
+		left: 50%
+		margin-left: -19px
+	.band_over
+		position: absolute
+		width: 100%
+		top: -15px
+		height: 1300px
+		background-image: url(../img/band.png)
+		background-size: cover
+		background-position: top left
+		z-index: 3
+	.content_step
+		position: relative
+		z-index: 5
+	.title_wrap
+		h2
+			margin-top: 33px
+		.arrow_down_step
+			display: inline-block
+			width: 39px
+			height: 39px
+			cursor: pointer
+			background-image: url(../img/icons/ic_arrow_down_yellow.png)
+			margin-top: 10px
+	.status_step
+		width: 340px
+		display: inline-block
+		text-align: left
+		padding-left: 50px
+		font-size: 17px
+		font-family: "verdanaitalic", sans-serif
+		line-height: 20px
+		position: relative
+		margin-top: 36px
+		margin-right: 21px
+		&::before
+			content: ''
+			position: absolute
+			width: 33px
+			height: 33px
+			background-image: url(../img/icons/ic_user_bl.png)
+			left: 0
+			top: 21px
+	.button_wr
+		display: inline-block
+		position: relative
+		top: -13px
+		font-size: 12px
+		.button
+			&:hover
+				background-color: #000
+				color: #fff
+
+.items_step
+	margin-top: 44px
+	.item_left
+		float: right
+		text-align: right
+		margin-right: 40px
+		h4
+			font-weight: normal
+			font-size: 24px
+			margin: 0
+			span
+				font-size: 36px
+		p
+			width: 355px
+			padding-right: 60px
+			font-family: "verdanabold", sans-serif
+			font-size: 16px
+			float: right
+			margin: 0
+			line-height: 21px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+	.item_right
+		margin-left: 40px
+		text-align: left
+		h4
+			font-weight: normal
+			font-size: 24px
+			margin: 0
+			span
+				font-size: 36px
+		p
+			width: 390px
+			padding-left: 60px
+			font-family: "verdanabold", sans-serif
+			font-size: 16px
+			margin: 0
+			line-height: 21px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+	.num2
+		margin-top: 141px
+		p
+			&::before
+				width: 43px
+				height: 48px
+				background-image: url(../img/icons/ic_user3.png)
+				right: 0
+				top: 5px
+	.num1
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 20px
+			height: 685px
+			background-image: url(../img/icons/ic_scheme_step.png)
+			left: -48px
+			top: 25px
+		p
+			&::before
+				width: 46px
+				height: 57px
+				background-image: url(../img/icons/ic_tablet.png)
+				left: 0
+				top: 0
+	.num3
+		margin-top: 150px
+		p
+			&::before
+				width: 53px
+				height: 37px
+				background-image: url(../img/icons/ic_warehouse.png)
+				left: 0
+				top: 0
+	.num4
+		margin-top: 139px
+		p
+			padding-left: 15px
+			a
+				font-size: 14px
+				color: #060606
+				text-decoration: underline
+				display: block
+				position: relative
+				margin-top: 12px
+				&::before
+					content: ''
+					position: absolute
+					width: 17px
+					height: 12px
+					background-image: url(../img/icons/ic_arrow_left.png)
+					top: 6px
+					left: 55px
+				&:hover
+					text-decoration: none
+					color: #060606
+			&::before
+				width: 38px
+				height: 30px
+				background-image: url(../img/icons/ic_photo.png)
+				right: 0
+				top: 10px
+	.num5
+		margin-top: 145px
+		p
+			padding-left: 0
+			img
+				display: block
+				margin-top: 10px
+	.num6
+		display: inline-block
+		margin-top: 70px
+		p
+			padding-left: 112px
+			margin-top: 12px
+			&::before
+				width: 120px
+				height: 77px
+				background-image: url(../img/weight.png)
+				top: 0
+				left: -30px
+
+.s_shipping
+	min-height: 647px
+	background-image: url(../img/bg_train.jpg)
+	background-size: cover
+	background-position: center
+	text-align: center
+	.title_wrap
+		h2
+			margin-top: 54px
+	.button_wrap
+		margin-top: 21px
+		display: inline-block
+		position: relative
+		&::after, &::before
+			content: ''
+			position: absolute
+			width: 31px
+			height: 50px
+			background-image: url(../img/icons/ic_arrow_right.png)
+			top: -36px
+			right: -55px
+		&::before
+			left: -55px
+			transform: scale(-1, 1)
+		.button
+			font-size: 12px
+			padding: 14px 46px
+
+
+.items_ship
+	margin-top: 27px
+	.tarif
+		.item_ship__white
+			padding: 28px 0
+			font-size: 17px
+
+.item_ship
+	width: 265px
+	display: inline-block
+	vertical-align: top
+	margin: 0 5px
+	&__white
+		background-color: #fff
+		color: #000
+		height: 140px
+		font-size: 14px
+		font-weight: normal
+		line-height: 21px
+		padding: 20px 0
+		h3
+			font-weight: normal
+	p
+		font-size: 18px
+		text-align: left
+		font-family: "verdanabold", sans-serif
+		margin-top: 15px
+		line-height: 22px
+		padding-left: 15px
+		

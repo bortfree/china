@@ -479,3 +479,249 @@ h2 {
   .item_serv .button {
     font-size: 12px;
     padding: 14px 21px; }
+
+.s_step {
+  height: 1285px;
+  position: relative;
+  text-align: center; }
+  .s_step::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 19px solid #fff;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -19px; }
+  .s_step .band_over {
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    height: 1300px;
+    background-image: url(../img/band.png);
+    background-size: cover;
+    background-position: top left;
+    z-index: 3; }
+  .s_step .content_step {
+    position: relative;
+    z-index: 5; }
+  .s_step .title_wrap h2 {
+    margin-top: 33px; }
+  .s_step .title_wrap .arrow_down_step {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    background-image: url(../img/icons/ic_arrow_down_yellow.png);
+    margin-top: 10px; }
+  .s_step .status_step {
+    width: 340px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 17px;
+    font-family: "verdanaitalic", sans-serif;
+    line-height: 20px;
+    position: relative;
+    margin-top: 36px;
+    margin-right: 21px; }
+    .s_step .status_step::before {
+      content: '';
+      position: absolute;
+      width: 33px;
+      height: 33px;
+      background-image: url(../img/icons/ic_user_bl.png);
+      left: 0;
+      top: 21px; }
+  .s_step .button_wr {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    font-size: 12px; }
+    .s_step .button_wr .button:hover {
+      background-color: #000;
+      color: #fff; }
+
+.items_step {
+  margin-top: 44px; }
+  .items_step .item_left {
+    float: right;
+    text-align: right;
+    margin-right: 40px; }
+    .items_step .item_left h4 {
+      font-weight: normal;
+      font-size: 24px;
+      margin: 0; }
+      .items_step .item_left h4 span {
+        font-size: 36px; }
+    .items_step .item_left p {
+      width: 355px;
+      padding-right: 60px;
+      font-family: "verdanabold", sans-serif;
+      font-size: 16px;
+      float: right;
+      margin: 0;
+      line-height: 21px;
+      position: relative; }
+      .items_step .item_left p::before {
+        content: '';
+        position: absolute; }
+  .items_step .item_right {
+    margin-left: 40px;
+    text-align: left; }
+    .items_step .item_right h4 {
+      font-weight: normal;
+      font-size: 24px;
+      margin: 0; }
+      .items_step .item_right h4 span {
+        font-size: 36px; }
+    .items_step .item_right p {
+      width: 390px;
+      padding-left: 60px;
+      font-family: "verdanabold", sans-serif;
+      font-size: 16px;
+      margin: 0;
+      line-height: 21px;
+      position: relative; }
+      .items_step .item_right p::before {
+        content: '';
+        position: absolute; }
+  .items_step .num2 {
+    margin-top: 141px; }
+    .items_step .num2 p::before {
+      width: 43px;
+      height: 48px;
+      background-image: url(../img/icons/ic_user3.png);
+      right: 0;
+      top: 5px; }
+  .items_step .num1 {
+    position: relative; }
+    .items_step .num1::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 685px;
+      background-image: url(../img/icons/ic_scheme_step.png);
+      left: -48px;
+      top: 25px; }
+    .items_step .num1 p::before {
+      width: 46px;
+      height: 57px;
+      background-image: url(../img/icons/ic_tablet.png);
+      left: 0;
+      top: 0; }
+  .items_step .num3 {
+    margin-top: 150px; }
+    .items_step .num3 p::before {
+      width: 53px;
+      height: 37px;
+      background-image: url(../img/icons/ic_warehouse.png);
+      left: 0;
+      top: 0; }
+  .items_step .num4 {
+    margin-top: 139px; }
+    .items_step .num4 p {
+      padding-left: 15px; }
+      .items_step .num4 p a {
+        font-size: 14px;
+        color: #060606;
+        text-decoration: underline;
+        display: block;
+        position: relative;
+        margin-top: 12px; }
+        .items_step .num4 p a::before {
+          content: '';
+          position: absolute;
+          width: 17px;
+          height: 12px;
+          background-image: url(../img/icons/ic_arrow_left.png);
+          top: 6px;
+          left: 55px; }
+        .items_step .num4 p a:hover {
+          text-decoration: none;
+          color: #060606; }
+      .items_step .num4 p::before {
+        width: 38px;
+        height: 30px;
+        background-image: url(../img/icons/ic_photo.png);
+        right: 0;
+        top: 10px; }
+  .items_step .num5 {
+    margin-top: 145px; }
+    .items_step .num5 p {
+      padding-left: 0; }
+      .items_step .num5 p img {
+        display: block;
+        margin-top: 10px; }
+  .items_step .num6 {
+    display: inline-block;
+    margin-top: 70px; }
+    .items_step .num6 p {
+      padding-left: 112px;
+      margin-top: 12px; }
+      .items_step .num6 p::before {
+        width: 120px;
+        height: 77px;
+        background-image: url(../img/weight.png);
+        top: 0;
+        left: -30px; }
+
+.s_shipping {
+  min-height: 647px;
+  background-image: url(../img/bg_train.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .s_shipping .title_wrap h2 {
+    margin-top: 54px; }
+  .s_shipping .button_wrap {
+    margin-top: 21px;
+    display: inline-block;
+    position: relative; }
+    .s_shipping .button_wrap::after, .s_shipping .button_wrap::before {
+      content: '';
+      position: absolute;
+      width: 31px;
+      height: 50px;
+      background-image: url(../img/icons/ic_arrow_right.png);
+      top: -36px;
+      right: -55px; }
+    .s_shipping .button_wrap::before {
+      left: -55px;
+      -webkit-transform: scale(-1, 1);
+          -ms-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+    .s_shipping .button_wrap .button {
+      font-size: 12px;
+      padding: 14px 46px; }
+
+.items_ship {
+  margin-top: 27px; }
+  .items_ship .tarif .item_ship__white {
+    padding: 28px 0;
+    font-size: 17px; }
+
+.item_ship {
+  width: 265px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px; }
+  .item_ship__white {
+    background-color: #fff;
+    color: #000;
+    height: 140px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    padding: 20px 0; }
+    .item_ship__white h3 {
+      font-weight: normal; }
+  .item_ship p {
+    font-size: 18px;
+    text-align: left;
+    font-family: "verdanabold", sans-serif;
+    margin-top: 15px;
+    line-height: 22px;
+    padding-left: 15px; }
