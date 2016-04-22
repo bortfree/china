@@ -47,7 +47,7 @@ body textarea:focus:required:invalid
 	color: red
 body input:required:valid,
 body textarea:required:valid
-	color: green
+	color: #000
 
 h1
 	font-size: 49px
@@ -727,3 +727,558 @@ h2
 		line-height: 22px
 		padding-left: 15px
 		
+.s_calculation
+	background-color: $yellow
+	padding-bottom: 57px
+	position: relative
+	background-image: url(../img/weight2.png)
+	background-repeat: no-repeat
+	background-position: right
+	.title_wrap
+		h2
+			margin-top: 59px
+	.arrow_down_calc
+		position: absolute
+		width: 39px
+		height: 39px
+		background-image: url(../img/icons/ic_arrow_down_bl.png)
+		bottom: -19px
+		left: 50%
+		margin-left: -19px
+		cursor: pointer
+		z-index: 5
+
+.form_wrap
+	margin-top: 44px
+
+.calc_form
+	font-family: "verdana", sans-serif
+	font-size: 14px
+	input, textarea
+		padding: 8px 19px
+		background-color: transparent
+		margin-bottom: 15px
+	.left_form
+		width: 235px
+		float: right
+		margin-right: 10px
+		input, textarea
+			display: block
+			width: 100%
+			border: 3px solid black
+		input
+			font-size: 15px
+		textarea
+			height: 140px
+			resize: none
+	.right_form
+		display: inline-block
+		margin-left: 15px
+		margin-top: 1px
+		input
+			display: block
+			width: 230px
+			border: none
+			margin-bottom: 12px
+			padding: 11px 11px
+			border-bottom: 3px solid black
+		.long
+			width: 385px
+		.button
+			border: none
+			background-color: #fff
+			padding: 13px 48px
+			font-size: 12px
+			display: block
+			position: relative
+			margin-top: 46px
+			font-family: "intro", sans-serif
+			&:hover
+				background-color: #000
+				color: #fff
+			&::before
+				content: ''
+				position: absolute
+				width: 31px
+				height: 50px
+				background-image: url(../img/icons/ic_arrow_right_gray.png)
+				top: -22px
+				right: -48px
+
+.s_company
+	position: relative
+	text-align: center
+	padding-bottom: 90px
+	.band_over
+		position: absolute
+		width: 100%
+		top: 187px
+		height: 1590px
+		background-image: url(../img/band.png)
+		background-size: cover
+		background-position: top left
+	.title_wrap
+		h2
+			margin-top: 58px
+		.title_list
+			display: inline-block
+			margin-left: 93px
+			ul
+				text-align: left
+				margin-top: 12px
+				font-size: 18px
+				font-family: "verdanabold", sans-serif
+				li
+					line-height: 24px
+	.button_wrap
+		margin-top: 70px
+		display: inline-block
+		.button
+			font-size: 12px
+			background-color: #fff
+			display: block
+			padding: 12px 27px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 31px
+				height: 50px
+				background-image: url(../img/icons/ic_arrow_right_gray.png)
+				top: -22px
+				right: -48px
+			&:hover
+				background-color: #000
+				color: #fff
+	.arrow_down_company
+		position: absolute
+		width: 39px
+		height: 39px
+		background-image: url(../img/icons/ic_arrow_down_bl.png)
+		bottom: -19px
+		left: 50%
+		margin-left: -19px
+		cursor: pointer
+		z-index: 5
+
+.items_company
+	margin-top: 18px
+
+.item_company
+	display: inline-block
+	max-width: 350px
+	font-size: 18px
+	font-family: "verdana", sans-serif
+	&__img
+		height: 210px
+		img
+			width: 100%
+			height: 100%
+	h4
+		font-weight: normal
+		font-family: "intro", sans-serif
+		font-size: 24px
+		margin: 0
+		margin-top: 30px
+		line-height: 21px
+	p
+		line-height: 25px
+		margin-bottom: 24px
+
+.item_left_company
+	float: right
+	text-align: right
+	margin-right: 12px
+.item_right_company
+	margin-left: 22px
+	text-align: left
+	float: left
+
+.items_foto_company
+	margin-top: 106px
+	margin-bottom: 40px
+
+.item_foto_company
+	display: inline-block
+	margin: 0 3px
+	h5
+		font-size: 18px
+		font-weight: normal
+		background-color: #dcdcdc
+		margin-top: 8px
+		line-height: 46px
+
+.licence_descr
+	text-align: left
+	margin-left: 45px
+	margin-top: 87px
+	h3
+		font-size: 33px
+		margin-bottom: 0
+	p
+		font-family: "verdana", sans-serif
+		font-size: 18px
+		line-height: 26px
+		margin: 0
+.license_wrap
+	text-align: right
+
+
+.s_compare
+	background-color: #f5f5f5
+	padding-bottom: 54px
+	.title_wrap
+		h2
+			margin-top: 70px
+		margin-bottom: 29px
+
+.item_compare
+	font-family: "verdana", sans-serif
+	font-size: 16px
+	padding-left: 30px
+	margin-bottom: 10px
+	p
+		margin: 0
+	&__title
+		h3
+			font-size: 26px
+			font-family: "intro", sans-serif
+			margin-bottom: 10px
+			margin-top: 5px
+			position: relative
+			display: inline-block
+			&::before
+				content: ''
+				position: absolute
+				width: 50px
+				display: inline-block
+				height: 50px
+				background-color: $yellow
+				top: 15px
+				left: -5px
+				z-index: 1
+			span
+				font-size: 48px
+				display: inline-block
+				position: relative
+				z-index: 5
+	.item_compare___descr_left
+		font-size: 17px
+		padding-right: 20px
+		line-height: 22px
+		margin-top: 8px
+	.item_compare___descr_right
+		line-height: 22px
+		padding-right: 25px
+		.button
+			font-size: 12px
+			display: inline-block
+			font-family: "intro", sans-serif
+			position: relative
+			margin: 50px 0 10px
+			padding: 10px 37px
+			&:hover
+				background-color: #000
+				color: #fff
+			&::before
+				content: ''
+				position: absolute
+				width: 31px
+				height: 50px
+				background-image: url(../img/icons/ic_arrow_right_gray.png)
+				top: -23px
+				right: -45px
+
+.s_pay
+	min-height: 574px
+	background-image: url(../img/bg_auto.jpg)
+	background-size: cover
+	background-position: center
+	text-align: center
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		width: 0
+		height: 0
+		border-left: 19px solid transparent
+		border-right: 19px solid transparent
+		border-top: 19px solid #000
+		bottom: -19px
+		left: 50%
+		margin-left: -19px
+	.overlay
+		position: absolute
+		width: 100%
+		.over
+			width: 100%
+			min-height: 574px
+			background-color: rgba(0, 0, 0, .48)
+	.title_wrap
+		h2
+			margin-top: 54px
+
+.items_pay
+	margin-top: 18px
+
+.item_pay
+	display: inline-block
+	&__title
+		display: inline-block
+		width: 200px
+		text-align: left
+		padding-left: 35px
+		font-size: 19px
+		margin-right: 80px
+		line-height: 17px
+		position: relative
+		h5
+			margin: 20px 0
+		&::before
+			content: ''
+			position: absolute
+			width: 28px
+			height: 27px
+			background-image: url(../img/icons/ic_galka.png)
+			left: 0
+			top: 20px
+		h5
+			font-weight: normal
+			text-transform: uppercase
+	&__descr
+		display: inline-block
+		width: 450px
+		font-size: 17px
+		font-family: "verdana", sans-serif
+		line-height: 17px
+		text-align: left
+		p
+			margin-bottom: 5px
+
+.s_faq
+	text-align: center
+	padding-bottom: 185px
+	background-image: url(../img/weight3.jpg)
+	background-repeat: no-repeat
+	background-position: center bottom
+	.title_wrap
+		h2
+			margin-top: 79px
+			font-size: 46px
+			margin-bottom: 26px
+	.button_wrap
+		margin-top: 32px
+		display: inline-block
+		position: relative
+		&::after, &::before
+			content: ''
+			position: absolute
+			width: 31px
+			height: 50px
+			opacity: .34
+			background-image: url(../img/icons/ic_arrow_right_gray.png)
+			top: -36px
+			right: -55px
+		&::before
+			left: -55px
+			transform: scale(-1, 1)
+		.button
+			font-size: 12px
+			&:hover
+				background-color: #000
+				color: #fff
+
+.item_faq
+	text-align: left
+	padding-left: 42px
+	font-family: "verdana", sans-serif
+	font-size: 18px
+	position: relative
+	margin-bottom: 40px
+	&::before
+		content: ''
+		position: absolute
+		width: 30px
+		height: 30px
+		background-color: $yellow
+		top: -2px
+		left: 34px
+		z-index: 1
+	h4
+		font-weight: normal
+		font-size: 22px
+		font-family: "intro", sans-serif
+		margin: 0
+		margin-bottom: 11px
+		position: relative
+		line-height: 26px
+		z-index: 5
+	p
+		margin: 0
+		line-height: 22px
+		margin-bottom: 20px
+	strong
+		display: block
+		position: relative
+		margin-bottom: 20px
+	a
+		color: #000
+		text-decoration: underline
+		&:hover
+			color: #000
+			text-decoration: none
+
+.last_item_faq
+	margin-top: 77px
+
+.s_question
+	background-color: $yellow
+	text-align: center
+	padding-bottom: 88px
+	.title_wrap
+		margin-top: 50px
+		h2
+			font-size: 46px
+		p
+			font-size: 21px
+	.form_wrap
+		display: inline-block
+		.input_wrap
+			display: inline-block
+			vertical-align: top
+			width: 235px
+			margin-right: 20px
+			input
+				width: 100%
+				border: 3px solid black
+				padding: 8px 19px
+				background-color: transparent
+				margin-bottom: 19px
+				text-transform: capitalize
+		.textarea_wrap
+			display: inline-block
+			width: 320px
+			textarea
+				width: 100%
+				height: 166px
+				resize: none
+				border: 3px solid black
+				padding: 8px 19px
+				background-color: transparent
+				text-transform: capitalize
+		.button_wrap
+			margin-top: 35px
+			.button
+				border: none
+				background-color: #fff
+				display: inline-block
+				font-size: 12px
+				position: relative
+				padding: 12px 76px
+				&::before
+					content: ''
+					position: absolute
+					width: 31px
+					height: 50px
+					background-image: url(../img/icons/ic_arrow_right_gray.png)
+					top: -23px
+					right: -45px
+				&:hover
+					background-color: #000
+					color: #fff
+
+.s_reviews
+	background-image: url(../img/weight4.jpg)
+	background-repeat: no-repeat
+	background-position: center top
+	text-align: center
+	padding-bottom: 25px
+	.title_wrap
+		h2
+			margin-top: 175px
+			font-size: 46px
+	.slider
+		margin-top: 34px
+		.slide
+			&__img
+				display: inline-block
+				vertical-align: top
+				width: 256px
+				border-radius: 10em
+				overflow: hidden
+				margin-right: 40px
+				position: relative
+				top: 16px
+				img
+					width: 100%
+					border-radius: 10em
+			&__descr
+				display: inline-block
+				width: 330px
+				text-align: left
+				h3
+					font-size: 22px
+					font-weight: normal
+					margin: 0
+				span
+					font-size: 14px
+					line-height: 18px
+				p
+					font-size: 18px
+					line-height: 22px
+					font-family: "verdana", sans-serif
+					margin-top: 4px
+					margin-bottom: 10px
+
+
+.owl-carousel
+	position: relative
+	.owl-controls
+		.owl-nav
+			.owl-prev, .owl-next
+				position: absolute
+				background-image: url(../img/icons/ic_arrow_slider.png)
+				width: 67px
+				height: 67px
+				top: 118px
+			.owl-prev
+				left: -145px
+			.owl-next
+				right: -145px
+				transform: scale(-1, 1)
+
+.social
+	background-image: url(../img/bg_footer.jpg)
+	min-height: 636px
+	background-size: cover
+	background-position: center
+	text-align: center
+	.logo
+		display: inline-block
+		margin-top: 37px
+	h3
+		font-weight: normal
+		font-size: 27px
+		margin-top: 43px
+		line-height: 34px
+		margin-bottom: 46px
+	.social_wrap
+		margin-top: 38px
+		img
+			margin: 0 17px
+	p
+		font-size: 14px
+		line-height: 24px
+		margin-top: 30px
+
+footer
+	background-color: #d5d5d5
+	text-align: center
+	padding: 69px 0
+	span
+		font-size: 27px
+	p
+		font-size: 18px
+		font-family: "verdana", sans-serif
+		margin-top: 87px
+		margin-bottom: 40px

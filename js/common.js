@@ -1,5 +1,12 @@
 $(function() {
 
+	$(".slider").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+	  navText: ''
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
