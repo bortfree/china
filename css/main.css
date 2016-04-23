@@ -422,7 +422,7 @@ h2 {
   .s_services .title_wrap h2 {
     margin-top: 50px; }
   .s_services .descr_serv {
-    width: 370px;
+    max-width: 370px;
     font-family: "verdana", sans-serif;
     font-size: 18px;
     margin: 20px auto;
@@ -557,7 +557,7 @@ h2 {
       .items_step .item_left h4 span {
         font-size: 36px; }
     .items_step .item_left p {
-      width: 355px;
+      max-width: 355px;
       padding-right: 60px;
       font-family: "verdanabold", sans-serif;
       font-size: 16px;
@@ -578,7 +578,7 @@ h2 {
       .items_step .item_right h4 span {
         font-size: 36px; }
     .items_step .item_right p {
-      width: 390px;
+      max-width: 390px;
       padding-left: 60px;
       font-family: "verdanabold", sans-serif;
       font-size: 16px;
@@ -673,7 +673,8 @@ h2 {
   background-image: url(../img/bg_train.jpg);
   background-size: cover;
   background-position: center;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30px; }
   .s_shipping .title_wrap h2 {
     margin-top: 54px; }
   .s_shipping .button_wrap {
@@ -1043,7 +1044,7 @@ h2 {
       text-transform: uppercase; }
   .item_pay__descr {
     display: inline-block;
-    width: 450px;
+    max-width: 450px;
     font-size: 17px;
     font-family: "verdana", sans-serif;
     line-height: 17px;
