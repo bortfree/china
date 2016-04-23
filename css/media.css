@@ -396,6 +396,12 @@
 	.s_reviews .slider .slide__descr{
 		width: 265px;
 	}
+	.popup_office .content h2{
+		line-height: 36px;
+	}
+	.item_office table tr td:first-child{
+		display: none;
+	}
 
 }
 

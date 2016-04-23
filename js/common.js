@@ -1,5 +1,18 @@
 $(function() {
 
+	$(".arrow_down_head").click(function() {
+		$("html, body").animate({ scrollTop: $(".my_head").height()+20 }, "slow");
+		return false;
+	});
+	
+
+	$(".bottom_head_wrap a").mPageScroll2id();
+
+	$(".popup").magnificPopup({
+		removalDelay: 500,
+  	mainClass: 'mfp-fade'
+	});
+
 	$(".slider").owlCarousel({
 		items: 1,
 		loop: true,

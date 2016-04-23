@@ -293,7 +293,6 @@ h2 {
   .s_why .title_wrap {
     margin-bottom: 50px; }
   .s_why .arrow_down_why {
-    cursor: pointer;
     position: absolute;
     bottom: -19px;
     z-index: 5;
@@ -1140,7 +1139,8 @@ h2 {
     .s_question .title_wrap p {
       font-size: 21px; }
   .s_question .form_wrap {
-    display: inline-block; }
+    display: inline-block;
+    font-family: "verdana", sans-serif; }
     .s_question .form_wrap .input_wrap {
       display: inline-block;
       vertical-align: top;
@@ -1279,3 +1279,133 @@ footer {
     font-family: "verdana", sans-serif;
     margin-top: 87px;
     margin-bottom: 40px; }
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+  .mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8; }
+  .mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+.popup_form {
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 55px; }
+  .popup_form h3 {
+    font-size: 17px;
+    font-weight: normal; }
+  .popup_form form {
+    font-family: "verdana", sans-serif;
+    font-size: 15px;
+    width: 235px;
+    display: inline-block; }
+    .popup_form form input, .popup_form form textarea {
+      border: 3px solid black;
+      background-color: transparent;
+      margin-bottom: 15px;
+      width: 100%;
+      padding: 8px 15px; }
+    .popup_form form .button {
+      border: none;
+      padding: 14px 40px;
+      width: 100%;
+      font-family: "intro", sans-serif; }
+      .popup_form form .button:hover {
+        background-color: #000;
+        color: #fff; }
+  .popup_form a {
+    display: block;
+    font-size: 13px;
+    color: #000;
+    text-decoration: underline;
+    position: relative;
+    margin-top: 15px; }
+    .popup_form a:hover {
+      color: #000;
+      text-decoration: none; }
+  .popup_form .descr_wrap p {
+    width: 250px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "verdana", sans-serif; }
+
+.popup_changes_pass .descr_wrap a, .popup_success_register .descr_wrap a {
+  width: 290px;
+  display: inline-block;
+  text-decoration: none; }
+  .popup_changes_pass .descr_wrap a:hover, .popup_success_register .descr_wrap a:hover {
+    background-color: #000;
+    color: #fff; }
+
+.popup_office .content {
+  text-align: left;
+  margin-top: 40px; }
+  .popup_office .content h2 {
+    display: inline-block;
+    font-size: 34px;
+    margin: 0; }
+  .popup_office .content .button_pass_wr {
+    display: inline-block;
+    float: right; }
+    .popup_office .content .button_pass_wr a {
+      font-size: 11px;
+      color: #000;
+      background-color: #efefef;
+      text-decoration: none;
+      padding: 9px 23px;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease; }
+      .popup_office .content .button_pass_wr a:hover {
+        background-color: #000;
+        color: #fff; }
+
+.fio_wrap_office {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "verdana", sans-serif; }
+  .fio_wrap_office h4 {
+    font-size: 31px;
+    font-family: "intro", sans-serif;
+    font-weight: normal;
+    margin: 0; }
+  .fio_wrap_office p {
+    margin: 0; }
+  .fio_wrap_office span {
+    font-family: "intro", sans-serif;
+    font-size: 18px; }
+
+.item_office {
+  margin-top: 40px; }
+  .item_office table {
+    border-collapse: separate;
+    border-spacing: 6px;
+    font-size: 18px;
+    font-family: "verdana", sans-serif; }
+    .item_office table tr td {
+      background-color: #efefef;
+      padding: 6px 15px; }
+      .item_office table tr td:last-child {
+        background-color: #fff;
+        padding: 0; }
+      .item_office table tr td:nth-child(3) {
+        font-family: "verdanabold", sans-serif;
+        font-size: 14px; }
+    .item_office table .success {
+      background-color: #9a9a9a; }
+    .item_office table .success_warn {
+      background-color: #ffeb43; }

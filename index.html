@@ -68,7 +68,7 @@
 
 				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
 					
-					<a href="#" class="weight_head">
+					<a href="#userin" class="weight_head popup">
 						<span>Узнать о состоянии груза</span>
 					</a>
 
@@ -77,8 +77,8 @@
 				<div class="col-md-2 col-sm-3 col-xs-6">
 					
 					<div class="user_wrap">
-						<a href="#" class="user_in">войти</a>
-						<a href="#" class="user_reg">зарегистрироваться</a>
+						<a href="#userin" class="user_in popup">войти</a>
+						<a href="#register" class="user_reg popup">зарегистрироваться</a>
 					</div>
 
 				</div>
@@ -116,7 +116,7 @@
 				
 				<div class="bottom_head_wrap">
 					<div class="button_wr">
-						<a href="#" class="button">Рассчитать доставку</a>
+						<a href="#calc" class="button">Рассчитать доставку</a>
 					</div>
 					<div class="arrow_down_head"></div>
 				</div>
@@ -366,7 +366,7 @@
 
 				</div>
 
-			
+
 
 			</div>
 		</div>
@@ -415,7 +415,7 @@
 		</div>
 	</section>
 
-	<section class="s_calculation">
+	<section class="s_calculation" id="calc">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -939,7 +939,359 @@
 	</footer>
 
 
-	<div class="hidden"></div>
+	<div class="hidden">
+		
+		<!-- Вход в кабинет -->
+		<div class="popup_form popup_user_in" id="userin">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>Вход в личный кабинет</h3>
+
+			<form>
+				<input type="text" placeholder="Login (ваш е-мейл)" required name="login">
+				<input type="password" placeholder="Пароль" required name="password">
+				<a href="#office" class="button popup">войти</a>
+			</form>
+
+			<a href="#pass_restore" class="popup">Восстановить пароль</a>
+
+		</div>
+		<!-- End Вход в кабинет -->
+
+		<!-- Регистрация -->
+		<div class="popup_form popup_register" id="register">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>Регистрация</h3>
+
+			<form>
+				<input type="text" placeholder="ФИО" required name="fio">
+				<input type="email" placeholder="E-mail (логин)" required name="login">
+				<input type="password" placeholder="Пароль" required name="password">
+				<button class="button">зарегестрироваться</button>
+			</form>
+
+
+		</div>
+		<!-- End Регистрация -->
+
+		<!-- Восстановить пароль -->
+		<div class="popup_form popup_pass_restore" id="pass_restore">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>Восстановить пароль</h3>
+
+			<form>
+				<input type="email" placeholder="Ваш E-mail" required name="email">
+				<button class="button">воccтановить</button>
+			</form>
+
+			<div class="descr_wrap">
+				<p>Вам на е-мейл будет отправлено письмо о восстановлении пароля.</p>
+			</div>
+
+		</div>
+		<!-- End Восстановить пароль -->
+
+		<!-- Поменять пароль -->
+		<div class="popup_form popup_replace_pass" id="replace_pass">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>Поменять пароль</h3>
+
+			<form>
+				<input type="password" placeholder="Ваш текущий пароль" required name="current_password">
+				<input type="password" placeholder="Ваш новый пароль" required name="new_password">
+				<button class="button">поменять</button>
+			</form>
+
+			<div class="descr_wrap">
+				<p>Пароль введен не верно.</p>
+			</div>
+
+		</div>
+		<!-- End Поменять пароль -->
+
+		<!-- Пароль изменен -->
+		<div class="popup_form popup_changes_pass" id="changes_pass">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>пароль изменен успешно</h3>
+
+			<div class="descr_wrap">
+				<a href="#office" class="button popup">перейти в личный кабинет</a>
+			</div>
+			
+
+
+		</div>
+		<!-- Пароль изменен -->
+
+		<!-- регистрация прошла успешно -->
+		<div class="popup_form popup_success_register" id="success_register">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>регистрация прошла успешно</h3>
+
+			<div class="descr_wrap">
+				<a href="#office" class="button popup">перейти в личный кабинет</a>
+			</div>
+			
+
+
+		</div>
+		<!-- регистрация прошла успешно -->
+
+		<!-- подтвердите регистрацию -->
+		<div class="popup_form popup_confirmation_register" id="confirmation_register">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>подтвердите регистрацию</h3>
+
+			<div class="descr_wrap">
+				<p>Проверьте Ваш е-мейл и подтвердите регистрацию, перейдя по ссылке в письме. </p>
+			</div>
+		</div>
+		<!-- подтвердите регистрацию -->
+
+		<!-- пароль отправлен -->
+		<div class="popup_form popup_pass_send" id="pass_send">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<h3>пароль отправлен</h3>
+
+			<div class="descr_wrap">
+				<p>Проверьте Ваш е-мейл.</p>
+			</div>
+		</div>
+		<!-- пароль отправлен -->
+
+		<!-- Личный кабинет -->
+		<div class="popup_form popup_office" id="office">
+			
+			<div class="logo">
+				<div class="logo__img">
+					<img src="img/logo_bl.png" alt="Long Dao">
+				</div>
+				<h5>Long Dao</h5>
+				<span>доставка из китая</span>
+			</div>
+
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>личный кабинет</h2>
+							<div class="button_pass_wr">
+								<a href="#replace_pass" class="popup">поменять пароль</a>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="fio_wrap_office">
+								<p><span>ФИО</span> Иванов Иван Иванович</p>
+								<p><span>Номер клиента</span> 1231456</p>
+							</div>
+						</div>
+
+						<div class="item_office">
+							<div class="col-xs-12">
+
+								<div class="fio_wrap_office">
+									<h4>заказ 1</h4>
+									<p><span>Номер груза</span> 123</p>
+									<p><span>Количество коробок</span> 25</p>
+									<p><span>Статус местонахождения груза:</span> </p>
+								</div>
+
+								<table>
+									<tr>
+										<td>Статус груза пока мне не известный 1)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 2)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td>
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+										</td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 3)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 4)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td>
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+										</td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 5)</td>
+										<td class="success_warn"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 6)</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 7)</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+
+						<div class="item_office">
+							<div class="col-xs-12">
+
+								<div class="fio_wrap_office">
+									<h4>заказ 2</h4>
+									<p><span>Номер груза</span> 123</p>
+									<p><span>Количество коробок</span> 25</p>
+									<p><span>Статус местонахождения груза:</span> </p>
+								</div>
+
+								<table>
+									<tr>
+										<td>Статус груза пока мне не известный 1)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 2)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td>
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+										</td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 3)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 4)</td>
+										<td class="success"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td>
+											<img src="img/weight_office.jpg" alt="Weight">
+											<img src="img/weight_office.jpg" alt="Weight">
+										</td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 5)</td>
+										<td class="success_warn"><img src="img/icons/ic_galka_office.png" alt="Success"></td>
+										<td>11.12.2016</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 6)</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Статус груза пока мне не известный 7)</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- End Личный кабинет -->
+
+
+	</div>
 
 	<div class="loader">
 		<div class="loader_inner"></div>
@@ -958,6 +1310,7 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/retina/retina.min.js"></script>
 	
 	<script src="js/common.js"></script>
