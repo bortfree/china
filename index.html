@@ -258,7 +258,7 @@
 								<img src="img/icons/ic_ship.png" alt="Ship">
 							</div>
 							<p>МОРСКАЯ ДОСТАВКА КОНТЕЙНЕРОВ</p>
-							<a href="#" class="button">оставить заявку</a>
+							<a href="#appl_weight" class="button popup">оставить заявку</a>
 						</div>
 
 						<div class="item_serv">
@@ -266,7 +266,7 @@
 								<img src="img/icons/ic_train.png" alt="Train">
 							</div>
 							<p>СБОРНЫЕ ГРУЗЫ ИЗ КИТАЯ</p>
-							<a href="#" class="button">оставить заявку</a>
+							<a href="#appl_weight" class="button popup">оставить заявку</a>
 						</div>
 
 						<div class="item_serv">
@@ -274,7 +274,7 @@
 								<img src="img/icons/ic_user2.png" alt="User">
 							</div>
 							<p>ПОИСК ПОСТАВЩИКА В КИТАЕ</p>
-							<a href="#" class="button">оставить заявку</a>
+							<a href="#search_sap" class="button popup">оставить заявку</a>
 						</div>
 
 					</div>
@@ -309,7 +309,7 @@
 							<p>Состояние груза Вы можете отслеживать в личном кабинете</p>
 						</div>
 						<div class="button_wr">
-							<a href="#" class="button">Зарегистрироваться</a>
+							<a href="#register" class="button popup">Зарегистрироваться</a>
 						</div>
 
 
@@ -329,7 +329,7 @@
 							<div class="item_left num4">
 								<h4><span>04.</span> фото-отчет груза</h4>
 								<p>Груз переходит границу, Вы получаете фото-отчет груза. При необходимости мы делаем дополнительную переупаковку груза.
-									<a href="#">Посмотреть фотографии</a>
+									<a href="#foto_weight" class="popup">Посмотреть фотографии</a>
 								</p>
 							</div>
 
@@ -407,7 +407,7 @@
 					</div>
 
 					<div class="button_wrap">
-						<a href="#" class="button">Заказать доставку</a>
+						<a href="#appl_weight" class="button popup">Заказать доставку</a>
 					</div>
 
 				</div>
@@ -447,6 +447,11 @@
 							</div>
 						</div>
 					</div>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Long Dao">
+					<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+					<input type="hidden" name="form_subject" value="Заявка на рассчет стоимости груза">
+					<!-- END Hidden Required Fields -->
 				</form>
 			</div>
 
@@ -503,7 +508,7 @@
 
 					<div class="col-sm-12 col-xs-12">
 						<div class="button_wrap">
-							<a href="#" class="button">получить консультацию у наших сотрудников</a>
+							<a href="#consult" class="button popup">получить консультацию у наших сотрудников</a>
 						</div>
 					</div>
 
@@ -516,30 +521,7 @@
 			<div class="row col-sm-12">
 				
 				<div class="items_foto_company">
-					<div class="item_foto_company">
-						<img src="img/foto_border.jpg" alt="Border">
-						<h5>граница</h5>
-					</div>
-					<div class="item_foto_company">
-						<img src="img/foto_sb_weight.jpg" alt="Border">
-						<h5>Сборный груз</h5>
-					</div>
-					<div class="item_foto_company">
-						<img src="img/foto_report.jpg" alt="Border">
-						<h5>Фото-отчет</h5>
-					</div>
-					<div class="item_foto_company">
-						<img src="img/foto_office.jpg" alt="Border">
-						<h5>Наш офис</h5>
-					</div>
-					<div class="item_foto_company">
-						<img src="img/foto_warehouse.jpg" alt="Border">
-						<h5>Наш склад</h5>
-					</div>
-					<div class="item_foto_company">
-						<img src="img/foto_border2.jpg" alt="Border">
-						<h5>Граница</h5>
-					</div>
+
 				</div>
 
 			</div>
@@ -558,7 +540,7 @@
 				<div class="col-sm-6 col-sm-pull-6 clean">
 					
 					<div class="license_wrap">
-						<a href="#"><img src="img/license.jpg" alt="License"></a>
+						<a href="img/license_full.jpg" class="license_pop"><img src="img/license.jpg" alt="License"></a>
 					</div>
 
 				</div>
@@ -613,7 +595,7 @@
 					<div class="col-sm-6">
 						<div class="item_compare___descr_right">
 							<p>Воспользовавшись нашим сервисом, Вы получаете бесплатный доступ к Личному кабинету, в котором можете отслеживать состояние груза в режиме онлайн. Также в Личном кабинете Вы сможете увидеть фотографии Вашего груза на нашем складе.</p>
-							<a href="#" class="button">зарегистрироваться</a>
+							<a href="#register" class="button popup">зарегистрироваться</a>
 						</div>
 					</div>
 				</div>
@@ -634,7 +616,7 @@
 					<div class="col-sm-6">
 						<div class="item_compare___descr_right">
 							<p>Лун Дао - лицензированная экспортно-импортная компания  зарегистрированная на территории Китая, которая дает возможность своим клиентам  полноценно развивать международный бизнес.</p>
-							<a href="#" class="button">посмотреть лицензию</a>
+							<a href="img/license_full.jpg" class="button license_prosm">посмотреть лицензию</a>
 						</div>
 					</div>
 				</div>
@@ -655,7 +637,7 @@
 					<div class="col-sm-6">
 						<div class="item_compare___descr_right">
 							<p>Поскольку Лун Дао является китайской компанией, число подрядчиков сведено к минимуму. Данные факты гарантируют ставки на порядок ниже, а также эффективное взаимодействие с поставщиками.</p>
-							<a href="#" class="button">рассчитать стоимость доставки</a>
+							<a href="#calc" class="button calc_scr">рассчитать стоимость доставки</a>
 						</div>
 					</div>
 				</div>
@@ -819,6 +801,11 @@
 							<div class="button_wrap">
 								<button class="button">узнать ответ</button>
 							</div>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Long Dao">
+							<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+							<input type="hidden" name="form_subject" value="Заявка с формы У вас есть вопрос?">
+							<!-- END Hidden Required Fields -->
 						</form>
 					</div>
 
@@ -1289,6 +1276,126 @@
 
 		</div>
 		<!-- End Личный кабинет -->
+
+		<!-- оставить заявку на доставку груза -->
+		<div class="application_weight" id="appl_weight">
+			<div class="container">
+				<form class="calc_form">
+					<div class="row">
+						<h3>оставить заявку на доставку груза</h3>
+						<div class="col-sm-6">
+							<div class="left_form">
+								<input type="text" placeholder="Имя" required name="name">
+								<input type="tel" placeholder="Телефон" name="phone">
+								<input type="email" placeholder="E-mail" required name="email">
+								<textarea name="description" placeholder="Описание груза"></textarea>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="right_form">
+								<input type="text" placeholder="Вес" required name="weight">
+								<input type="text" placeholder="Объем" required name="volume">
+								<input class="long" type="text" placeholder="Откуда" required name="how">
+								<input class="long" type="text" name="where" placeholder="Куда" required>
+								<button class="button">отправить</button>
+							</div>
+						</div>
+					</div>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Long Dao">
+					<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+					<input type="hidden" name="form_subject" value="Заявка на доставку груза">
+					<!-- END Hidden Required Fields -->
+				</form>
+			</div>
+		</div>
+		<!-- End оставить заявку на доставку груза -->
+
+		<!-- оставить заявку на поиск поставщика -->
+		<div class="popup_form popup_search_sap" id="search_sap">
+			
+			<h3>оставить заявку на поиск поставщика</h3>
+
+			<form>
+				<input type="text" placeholder="Имя" required name="name">
+				<input type="tel" placeholder="Телефон"  name="phone">
+				<input type="email" placeholder="E-mail" required name="email">
+				<textarea name="description" placeholder="Опишите вашу ситуацию"></textarea>
+				<button class="button">отправить</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Long Dao">
+				<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+				<input type="hidden" name="form_subject" value="Заявка на поиск поставщика">
+				<!-- END Hidden Required Fields -->
+			</form>
+
+		</div>
+		<!-- End оставить заявку на поиск поставщика -->
+
+		<!-- получить консультацию у нащих сотрудников -->
+		<div class="popup_form popup_search_sap" id="consult">
+			
+			<h3>получить консультацию у наших сотрудников</h3>
+
+			<form>
+				<input type="text" placeholder="Имя" required name="name">
+				<input type="tel" placeholder="Телефон"  name="phone">
+				<input type="email" placeholder="E-mail" required name="email">
+				<textarea name="description" placeholder="Опишите вашу ситуацию"></textarea>
+				<button class="button">отправить</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Long Dao">
+				<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+				<input type="hidden" name="form_subject" value="Заявка на консультацию сотрудников">
+				<!-- END Hidden Required Fields -->
+			</form>
+
+		</div>
+		<!-- End получить консультацию у нащих сотрудников -->
+
+		<!-- Окно благодарности -->
+		<div class="popup_form popup_search_sap done" id="done">
+			
+			<h3>спасибо</h3>
+
+			<p>Мы свяжемся с Вами в ближайшее время!</p>
+			<p>А пока предлагаем почитать полезную информацию по доставке товаров из Китая в нашем блоге.</p>
+			<div class="button_wrap">
+				<a href="#" class="button">перейти в блог</a>
+			</div>
+			
+		</div>
+		<!-- End Окно благодарности -->
+
+		<!-- Фото-отчет груза -->
+		<div class="popup_form popup_foto_weight" id="foto_weight">
+			
+			<h3>фото-отчет груза</h3>
+
+			<div class="slider_foto">
+				
+				<div class="slide">
+					<div class="img_wrap">
+						<img src="img/foto_weight.jpg" alt="Weight">
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="img_wrap">
+						<img src="img/foto_weight.jpg" alt="Weight">
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="img_wrap">
+						<img src="img/foto_weight.jpg" alt="Weight">
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+		<!-- End Фото-отчет груза -->
 
 
 	</div>

@@ -508,7 +508,6 @@ h2
 			display: inline-block
 			width: 39px
 			height: 39px
-			cursor: pointer
 			background-image: url(../img/icons/ic_arrow_down_yellow.png)
 			margin-top: 10px
 	.status_step
@@ -745,7 +744,6 @@ h2
 		bottom: -19px
 		left: 50%
 		margin-left: -19px
-		cursor: pointer
 		z-index: 5
 
 .form_wrap
@@ -858,7 +856,6 @@ h2
 		bottom: -19px
 		left: 50%
 		margin-left: -19px
-		cursor: pointer
 		z-index: 5
 
 .items_company
@@ -895,6 +892,11 @@ h2
 	float: left
 
 .items_foto_company
+	min-height: 253px
+	width: 100%
+	background-image: url(../img/bg_weight.png)
+	background-size: cover
+	background-position: center
 	margin-top: 106px
 	margin-bottom: 40px
 
@@ -1419,3 +1421,70 @@ footer
 			background-color: #9a9a9a
 		.success_warn
 			background-color: $yellow
+
+.application_weight
+	background-color: #fff
+	max-width: 990px
+	margin: 0 auto
+	padding: 30px 0 40px
+	position: relative
+	h3
+		text-align: center
+		font-size: 20px
+		font-family: "intro", sans-serif
+	.calc_form
+		.right_form
+			.button
+				background-color: $yellow
+				&:hover
+					background-color: #000
+
+.popup_search_sap
+	min-height: auto
+	max-width: 620px
+	margin: 0 auto
+	padding-top: 30px
+	padding-bottom: 40px
+	position: relative
+	form
+		textarea
+			height: 140px
+			resize: none
+
+.done
+	max-width: 420px
+	padding: 30px 60px 40px
+	h3
+		font-size: 38px
+		margin: 0
+	p
+		text-align: left
+		font-size: 18px
+		font-family: "verdana", sans-serif
+	.button
+		width: auto
+		text-decoration: none
+		display: inline-block
+		&:hover
+			background-color: #000
+			color: #fff
+
+.popup_foto_weight
+	max-width: 696px
+	border: 1px solid black
+	margin: 0 auto
+	min-height: auto
+	padding: 30px 30px 40px
+	text-align: center
+	position: relative
+	h3
+		font-size: 21px
+	.slider_foto
+		display: inline-block
+		width: 290px
+		text-align: center
+		.slide
+			width: 290px
+			display: inline-block
+			img
+				width: 100%

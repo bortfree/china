@@ -402,6 +402,12 @@
 	.item_office table tr td:first-child{
 		display: none;
 	}
+	.popup_foto_weight{
+		padding: 30px 19px 40px;
+	}
+	.popup_foto_weight .slider_foto{
+		width: 265px;
+	}
 
 }
 

@@ -7,13 +7,25 @@ $(function() {
 	
 
 	$(".bottom_head_wrap a").mPageScroll2id();
+	$(".calc_scr").mPageScroll2id();
 
+	$('.license_wrap a, .license_prosm').magnificPopup({
+		type: 'image',
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
 	$(".popup").magnificPopup({
 		removalDelay: 500,
   	mainClass: 'mfp-fade'
 	});
 
 	$(".slider").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+	  navText: ''
+	});
+	$(".slider_foto").owlCarousel({
 		items: 1,
 		loop: true,
 		nav: true,
@@ -29,14 +41,19 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$("#appl_weight form, #search_sap form, #calc form, #consult form, .s_question form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$.magnificPopup.open({
+        items: {
+          src: '.done'
+        },
+        type: 'inline'
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
